@@ -1,0 +1,60 @@
+<section id="first">
+  <h1>Show/Hide Div</h1>
+  <div id="toggle" *ngIf="show">This div will be hidden upon button click.</div>
+  <button id="toggleBtn" (click)="toggleDiv()" *ngIf="show">Hide</button>
+  <button id="toggleBtn" (click)="toggleDiv()" *ngIf="!show">Show</button>
+</section>
+<hr>
+<section id="second">
+  <h1>Increment/Decrement</h1>
+  <div id="part-2">
+    <button id="part-2Btn" (click)="decreaseValue()">-</button>
+    <div id="part-2Value">{{value}}</div>
+    <button id="part-2Btn" (click)="increaseValue()">+</button>
+  </div>
+  <br>
+</section>
+<hr>
+<section id="third">
+  <h1>Search and Show from Array</h1>
+  <div id="part-3">
+    <input type="text" id="inputSearch" #inputSearch placeholder="Search for a name">
+    <button class="btn" (click)="filterData(inputSearch.value)">Search</button>
+    <button class="btn" (click)="changeData()">Show All</button>
+  </div>
+  <ul *ngFor="let name of filteredData" class="list">
+    <li>{{name}}</li>
+  </ul>
+  <br>
+</section>
+<hr>
+<section id="fourth">
+  <h1>To-do List </h1>
+  <div id="part-4">
+    <input type="text" id="todo-text" #todotext>
+    <button class="btn" (click)="addTodo(todotext.value)">Add Task</button>
+  </div>
+  <h2 id="current-todos">Current To-dos</h2>
+  <ul class="list" *ngFor="let todo of todos">
+    <li>
+      <div class="todo-item">
+        <p>{{todo.text}}</p>
+        <button class="btn-small" (click)="deleteTodo(todo.id)">Delete</button>
+      </div>
+    </li>
+  </ul>
+  <br>
+</section>
+<hr>
+<section id="fifth">
+  <h1>Stopwatch</h1>
+  <div class="timerDisplay">
+    {{h}} : {{m}} : {{s}} : {{ms}}
+  </div>
+  <div class="stopwatchButtons">
+    <button id="btnStart" class="btn" (click)="startTimer()" *ngIf="isRunning==false">Start</button>
+    <button id="btnPause" class="btn" (click)="pauseTimer()" *ngIf="isRunning==true">Pause</button>
+    <button id="btnReset" class="btn" (click)="resetTimer()">Reset</button>
+  </div>
+  <br>
+</section>
