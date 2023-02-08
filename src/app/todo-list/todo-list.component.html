@@ -1,0 +1,17 @@
+<section id="fourth">
+    <h1>To-do List </h1>
+    <div id="part-4">
+      <input type="text" id="todo-text" #todotext>
+      <button class="btn" (click)="addTodo(todotext.value)">Add Task</button>
+    </div>
+    <h2 id="current-todos">Current To-dos</h2>
+    <ul class="data-list" *ngFor="let todo of todos">
+      <li>
+        <div class="todo-item">
+          <p>{{todo.text}}</p>
+          <button class="btn-small" (click)="deleteTodo(todo.id)">Delete</button>
+        </div>
+      </li>
+    </ul>
+    <br>
+  </section>

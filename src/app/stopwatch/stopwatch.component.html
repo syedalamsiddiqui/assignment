@@ -1,0 +1,12 @@
+<section id="fifth">
+    <h1>Stopwatch</h1>
+    <div class="timerDisplay">
+      {{h}} : {{m}} : {{s}} : {{ms}}
+    </div>
+    <div class="stopwatchButtons">
+      <button id="btnStart" class="btn" (click)="startTimer()" *ngIf="isRunning==false">Start</button>
+      <button id="btnPause" class="btn" (click)="pauseTimer()" *ngIf="isRunning==true">Pause</button>
+      <button id="btnReset" class="btn" (click)="resetTimer()">Reset</button>
+    </div>
+    <br>
+  </section>

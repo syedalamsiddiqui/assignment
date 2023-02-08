@@ -1,0 +1,12 @@
+<section id="third">
+    <h1>Search and Show from Array</h1>
+    <div id="part-3">
+      <input type="text" id="inputSearch" #inputSearch placeholder="Search for a name">
+      <button class="btn" (click)="filterData(inputSearch.value)">Search</button>
+      <button class="btn" (click)="changeData()">Show All</button>
+    </div>
+    <ul *ngFor="let name of filteredData" class="list">
+      <li>{{name}}</li>
+    </ul>
+    <br>
+  </section>

@@ -1,0 +1,39 @@
+#toggle {
+    background-color: yellow;
+    border: 1px solid black;
+    font-size: 2rem;
+    margin-block: 5px;
+}
+#toggleBtn{
+    width: 100px;
+    font-size: 1.2rem;
+    margin-block:10px ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3rem;
+    margin-block: 10px;
+}
+hr {
+    margin-block: 20px;
+}
+.btn{
+    width: 150px;
+    font-size: 1.2rem;
+    padding: 2px;
+}
+.btn-small{
+    width: 85px;
+    font-size: 1rem;
+    padding: 2px;
+}
+section{
+    padding-inline:  10px;
+}
+#first{
+    background-color: lightblue;
+}

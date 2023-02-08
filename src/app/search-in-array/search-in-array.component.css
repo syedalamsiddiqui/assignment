@@ -1,0 +1,35 @@
+#inputSearch{
+    height: 30px;
+    width: 300px;
+}
+#part-3{
+    display: flex;
+    gap: 10px;
+    margin-block: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 3rem;
+    margin-block: 10px;
+}
+
+.btn{
+    width: 150px;
+    font-size: 1.2rem;
+    padding: 2px;
+}
+.btn-small{
+    width: 85px;
+    font-size: 1rem;
+    padding: 2px;
+}
+section{
+    padding-inline:  10px;
+}
+#third{
+    background-color: lightsteelblue;
+}
